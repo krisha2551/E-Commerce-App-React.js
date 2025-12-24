@@ -1,16 +1,82 @@
-# React + Vite
+🛒 Urban-Cart — Modern React E-Commerce App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Urban-Cart is a fully responsive e-commerce web application built with React + Vite + Bootstrap.
+It allows users to browse products, manage cart items, and place orders using a JSON-based backend.
 
-Currently, two official plugins are available:
+🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live: https://urban-cart.vercel.app
 
-## React Compiler
+📸 Screenshots
+Home Page
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✨ Features
 
-## Expanding the ESLint configuration
+🛍 Product listing from JSON Server
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛒 Add to cart & cart modal
+
+📦 Order history management
+
+🔄 Loading & error handling UI
+
+⚡ Fast performance using Vite
+
+🎨 Clean & responsive UI with Bootstrap
+
+🌐 Custom HTTP Hook (useHttp)
+
+
+📁 Modular & scalable project structure
+
+| Tech        | Purpose            |
+| ----------- | ------------------ |
+| React       | Frontend framework |
+| Vite        | Build tool         |
+| Bootstrap   | Styling            |
+| JSON Server | Mock REST API      |
+| JavaScript  | Logic              |
+| CSS         | Styling            |
+
+
+📂 Project Structure
+src/
+ ┣ assets/
+ ┣ components/
+ ┃ ┣ CartModal.jsx
+ ┃ ┣ Navbar.jsx
+ ┃ ┣ Orders.jsx
+ ┃ ┣ Product.jsx
+ ┃ ┣ Loading.jsx
+ ┃ ┗ Error.jsx
+ ┣ hooks/
+ ┃ ┗ http.js
+ ┣ App.jsx
+ ┣ main.jsx
+ ┣ index.css
+
+⚙️ Installation
+
+Clone Repository
+git clone https://github.com/your-username/urban-cart.git
+cd urban-cart
+
+Install Dependencies
+npm install
+
+Run Backend
+npx json-server --watch db.json --port 5000
+
+Run Frontend
+npm run dev
+
+
+Open in browser:
+
+http://localhost:5173
+
+| Method | Endpoint  | Description        |
+| ------ | --------- | ------------------ |
+| GET    | /products | Fetch all products |
+| POST   | /orders   | Save order data    |
+| GET    | /orders   | View orders        |
