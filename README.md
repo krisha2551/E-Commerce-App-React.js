@@ -5,7 +5,7 @@ It allows users to browse products, manage cart items, and place orders using a 
 
 🚀 Live Demo
 
-Live: https://urban-cart.vercel.app
+Live: e-commerce-app-react-js-three.vercel.app
 
 📸 Screenshots
 Home Page
